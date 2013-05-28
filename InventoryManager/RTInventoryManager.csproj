@@ -100,8 +100,16 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <SDKReference Include="Microsoft.VCLibs, Version=11.0">
+      <Name>Microsoft Visual C++ Runtime Package</Name>
+    </SDKReference>
+    <SDKReference Include="SQLite.WinRT, Version=3.7.17">
+      <Name>SQLite for Windows Runtime</Name>
+    </SDKReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RTDatabaseWrapper.cs" />
+    <Compile Include="InventoryItem.cs" />
     <Compile Include="InventoryManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
